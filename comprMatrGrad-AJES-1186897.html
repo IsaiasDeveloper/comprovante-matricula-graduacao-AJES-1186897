@@ -1,0 +1,92 @@
+<meta charset="UTF-8" />
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .page {
+    width: 205mm;
+    height: 262mm;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    text-align: center;
+    padding-top: 120px;
+
+    /* border: 1px solid; */
+  }
+  .pageContent {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  img {
+    width: 160px;
+    margin: 0 auto 30px;
+  }
+  .docTitle {
+    text-align: center;
+    font-size: 18px;
+  }
+  .docSubTitle {
+    font-size: 12px;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+  .infoBox {
+    width: 90%;
+    margin: 40px auto 30px;
+    border: 1px solid;
+    padding: 15px 20px 40px;
+  }
+  .infoBox p {
+    text-align: justify;
+    font-weight: 500;
+  }
+
+  .placeDate {
+    text-align: right;
+    margin-bottom: 70px;
+  }
+  .QRCode {
+    width: 95%;
+    margin: auto;
+    display: block;
+    text-align: left;
+  }
+</style>
+<div class="page">
+  <div class="pageContent">
+    <!-- https://wing.com.br -->
+    <img src="/Loja/Imagens/logoajes6102022115446706.jpg" alt="Image" />
+    <p class="docTitle"><b>(15382) Faculdade AJES</b></p>
+    <p class="docSubTitle">
+      Recredenciada pela Portaria nº 658 de 22/03/2019, publicada no DOU nº 57,
+      seção 1, pág. 56 de 25/03/2019. <br />Av. Gabriel Muller, 1136N Faculdade
+      AJES - Modulo-1 - Juina/MT - CEP 78320-000
+    </p>
+
+    <p class="docTitle"><b>Comprovante de Matricula</b></p>
+
+    <div class="infoBox">
+      <p class="infoText">
+        Atestamos para os devidos fins que,
+        <span class="returnBd"><b>|strNome|</b></span
+        >, nascido(a) na data de <span class="returnBd">|dtmNascimento|</span>,
+        natural de <span class="returnBd">|strCidade|/|strEstado|</span>, CPF nº
+        <span class="returnBd">|strCPF|</span>, está regularmente matriculado(a)
+        em disciplinas do <span class="returnBd">|strCursoMaster|</span> do
+        curso de <span class="returnBd">|strTurmaOuPacote|</span>, matricula
+        <span class="returnBd"><b>|strMatricula|</b></span> - em curso no
+        periodo letivo de <b>2023/1</b>.
+      </p>
+    </div>
+    <p class="placeDate">
+      Juína, <span class="returnBd">|dataDiaMesAno|</span>
+    </p>
+
+    <div class="QRCode">|QRCODE|</div>
+  </div>
+</div>
